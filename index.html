@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Xova is a personal website for projects, apps, games, and creative work. Explore tools, ideas, and digital experiences by Xoova.">
+
+<meta name="keywords" content="Xoova, xoova.in, Xova, Xova com, Xova in, Xova org">
+
+<meta name="author" content="Xova">
+
+<!-- Open Graph (Google + Social preview) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xova">
+<meta property="og:description" content="Personal website of Xoova. Apps, games, and creative digital projects.">
+<meta property="og:url" content="https://xoova.in">
+<meta property="og:image" content="https://xoova.in/favicon.webp">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Xova">
+<meta name="twitter:description" content="Personal website of Xoova. Apps, games, and creative projects.">
+<meta name="twitter:image" content="https://xoova.in/favicon.webp">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XOVA</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="favicon.webp" sizes="32x32">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOGIN + SIGNUP ================= -->
+<div id="auth-screen" class="auth-screen hidden">
+  <div class="auth-card">
+    <span id="auth-close" class="auth-close">&times;</span>
+    <h2 id="auth-title">Login</h2>
+    <input type="email" id="auth-email" placeholder="Email">
+    <input type="password" id="auth-password" placeholder="Password">
+    <button id="auth-button" class="btn-primary">Continue</button>
+
+    <p class="auth-toggle" id="auth-toggle-text">
+      Don't have an account? <span>Sign Up</span>
+    </p>
+
+    <div class="google-btn" id="google-signin">
+      <img src="g-logo.webp" alt="Google">
+      Continue with Google
+    </div>
+  </div>
+</div>
+<!-- ================= END LOGIN ================= -->
+
+<!-- =========== Preloader =========== -->
+<div id="preloader">
+  <div class="loader-gear"></div>
+</div>
+
+<!-- =========== Header =========== -->
+<header>
+  <nav class="container">
+    <div class="logo-wrapper">
+      <img src="favicon.webp" alt="XOVA" class="logo-favicon" id="favicon-icon">
+      <a href="#" class="logo">XOVA</a>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#apps-games">App & Games</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="nav-buttons" id="nav-buttons">
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign Up</button>
+      <button class="btn-logout" id="btn-logout">Logout</button>
+    </div>
+
+    <button class="hamburger-menu" id="hamburger-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- =========== Mobile Nav =========== -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#apps-games">App & Games</a>
+  <!-- <a href="#projects">Projects</a> -->
+  <a href="#about">About</a>
+
+  <div class="mobile-auth-buttons">
+    <button class="btn-login">Login</button>
+    <button class="btn-signup">Sign Up</button>
+    <button class="btn-logout" id="mobile-btn-logout">Logout</button>
+  </div>
+</div>
+
+<!-- =========== All Games Screen =========== -->
+<div id="all-games-screen" class="all-games-screen hidden">
+  <div class="container">
+    <div class="all-games-header">
+      <h2>All Games</h2>
+      <button id="all-games-close" class="all-games-close">&times;</button>
+    </div>
+    <div class="all-games-grid"></div>
+  </div>
+</div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to the XOVA</h1>
+      <p>Your ultimate destination for competitive gaming and community.</p>
+      <button id="explore-games-btn" class="btn-primary">Explore Games</button>
+    </div>
+  </section>
+
+  <!-- Games -->
+  <section id="apps-games" class="apps-section animate-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <h2>App & Games</h2>
+      </div>
+
+      <div class="carousel-wrapper">
+        <div class="games-carousel" id="games-carousel"></div>
+
+        <div class="carousel-nav">
+          <button id="scroll-left" class="arrow-btn">&larr;</button>
+          <button id="scroll-right" class="arrow-btn">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects -->
+<!--  <section id="projects" class="placeholder-section animate-on-scroll"> -->
+<!--  <div class="container"> -->
+<!--      <h2>Our Projects</h2> -->
+<!--      <p>Coming Soon...</p> -->
+<!--    </div> -->
+<!--  </section> -->
+
+  <!-- About -->
+  <section id="about" class="about-section animate-on-scroll">
+    <div class="container">
+      <h2>Our Values</h2>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>We Empower Players</h3>
+          <p>Our players are at the heart of everything.</p>
+        </div>
+        <div class="value-card">
+          <h3>We Innovate Fearlessly</h3>
+          <p>We embrace bold ideas and new technology.</p>
+        </div>
+        <div class="value-card">
+          <h3>We Play with Urgency</h3>
+          <p>Speed and precision guide everything we do.</p>
+        </div>
+        <div class="value-card">
+          <h3>We Are All-In</h3>
+          <p>Commitment to excellence in every pixel.</p>
+        </div>
+        <div class="value-card">
+          <h3>We Stay Humble</h3>
+          <p>Always learning, always improving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 XOVA. All Rights Reserved.</p>
+    <p class="disclaimer">XOVA is a concept project.</p>
+  </div>
+</footer>
+
+<!-- 🔥 Firebase (MUST be before script.js) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+<!-- Main JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
